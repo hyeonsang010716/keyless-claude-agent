@@ -19,3 +19,4 @@ export CLAUDE_CODE_OAUTH_TOKEN=sk-ant-oat01-...
 | `3_message_types.py` | 3편 메시지 타입 | 모든 메시지/블록 타입을 분류 출력하는 핸들러 | `uv run examples/3_message_types.py` |
 | `4_error_handling.py` | 4편 에러 처리 | 정상/잘못된 cwd/도구 에러 3가지 시나리오 | `uv run examples/4_error_handling.py` |
 | `5_permission_system.py` | 5편 권한 심화 | 감사 로그, 위험 명령 차단, 경로 격리 3가지 시나리오 | `uv run examples/5_permission_system.py` |
+| `6_hook_system.py` | 6편 훅 시스템 | 도구 로깅, Bash 차단, 경로 강제 변환 3가지 시나리오 | `uv run examples/6_hook_system.py` |
