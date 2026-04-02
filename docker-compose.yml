@@ -1,0 +1,20 @@
+services:
+  claude-agent:
+    build: .
+    container_name: claude-agent
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      # 작업 디렉토리 (에이전트가 파일을 읽고 쓸 공간)
+      - ./workspace:/app/workspace
+    ports:
+      - "8000:8000"
+    # 리소스 제한 (필요에 따라 조절)
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+          cpus: "2.0"
